@@ -2,7 +2,7 @@
     "serverPort": "5000",
     "dataBaseConfig": 
     {
-        "host": "localhost",
+        "host": "127.0.0.1",
         "user": "root",
         "database": "jmmarket",
         "port": "3306",
