@@ -4,8 +4,8 @@
     {
         "host": "localhost",
         "user": "root",
-        "password":"",
-        "database": "jmmarket"
+        "database": "jmmarket",
+        "password":""
     },
     "secretKey": "Lolapopa12345"
 }

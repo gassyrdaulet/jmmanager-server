@@ -1,12 +1,9 @@
 import express from 'express';
 import bodyParser from "body-parser";
-import OrderService from './service/OrderService.js';
-import conn from './db.js';
 import config from 'config';
 import authRouter from './routes/authRoutes.js';
 import ordersRouter from './routes/orderRoutes.js';
 import goodsRouter from './routes/goodRoutes.js';
-import {auth} from './middleware/routerSecurity.js';
 import cors from 'cors';
 
 const app = express();
