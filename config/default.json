@@ -1,0 +1,10 @@
+{
+    "serverPort": "5000",
+    "dataBaseConfig": 
+    {
+        "host": "localhost",
+        "user": "root",
+        "database": "database"
+    },
+    "secretKey": "Lolapopa12345"
+}
