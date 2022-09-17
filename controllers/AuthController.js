@@ -87,7 +87,7 @@ export default class AuthController{
                 return res.status(400).json({message: 'User with such Email already exists.'})
             } else {
                 const hashPassword = await bcrypt.hash(password, 5)
-                await conn.query(sql2, {email, name, role : 0, password: hashPassword})
+                await conn.query(sql2, {email, name, role , password: hashPassword})
                 return res.json({message: 'User created succesfully.'}).status(200)
             }
         } catch(e) {
