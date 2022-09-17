@@ -5,6 +5,7 @@
         "host": "localhost",
         "user": "root",
         "database": "jmmarket",
+        "port": "3306",
         "password":""
     },
     "secretKey": "Lolapopa12345"
