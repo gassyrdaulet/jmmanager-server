@@ -5,6 +5,7 @@ import {check, validationResult} from "express-validator";
 import config from 'config';
 import AuthService from "../service/AuthService.js";
 
+
 const generateAccesToken = (id, role) => {
     const payload = {
         id,
