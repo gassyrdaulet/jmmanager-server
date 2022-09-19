@@ -33,7 +33,7 @@ export default class OrderController {
         const paymentSum = OrderService.getPaymentSum(payment)
         const wholeSaleSum = OrderService.getWholesaleSum(prices, goodsCount)
         
-        console.log(status)
+        console.log(sumOfPayment, sum)
 
         if (status === 0 && sumOfPayment === sum) {
             body.status = 0
