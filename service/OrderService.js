@@ -25,7 +25,7 @@ export default class OrderService {
     }
 
     static async getUserName(id){
-        const sql = `SELECT name FROM userlist WHERE id = ${id}`
+        const sql = `SELECT name FROM userList WHERE id = ${id}`
         const data = (await conn.query(sql))[0][0]
         const name = data? data.name : ''
         return name
