@@ -52,7 +52,7 @@ export default class AuthController{
     
     static async getUsers(req, res){
             const respond = []
-            const sql = `SELECT * FROM userlist WHERE name LIKE '%${req.query.searchValue}%'`
+            const sql = `SELECT * FROM userList WHERE name LIKE '%${req.query.searchValue}%'`
             try{
                 const users = (await conn.query(sql))[0]
                 users.map((user) => respond.push({value: user.id, label: user.name}))

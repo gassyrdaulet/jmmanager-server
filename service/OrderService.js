@@ -13,8 +13,8 @@ export default class OrderService {
     }
 
     static async payOff(id, income){
-        const sql = `SELECT balance FROM userlist WHERE id = ${id}`
-        const sql2 = `UPDATE userlist SET balance = ? WHERE id = ${id}`
+        const sql = `SELECT balance FROM userList WHERE id = ${id}`
+        const sql2 = `UPDATE userList SET balance = ? WHERE id = ${id}`
         try{
             const balance = (await conn.query(sql))[0][0].balance
             conn.query(sql2, balance + income)
