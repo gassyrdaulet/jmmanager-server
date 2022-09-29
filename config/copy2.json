@@ -1,0 +1,12 @@
+{
+  "serverPort": "5050",
+  "HTTPSserverPort": "4040",
+  "dataBaseConfig": {
+    "host": "127.0.0.1",
+    "user": "root",
+    "database": "jmmarket",
+    "port": "3306",
+    "password": ""
+  },
+  "secretKey": "Lolapopa12345"
+}
