@@ -29,7 +29,7 @@ app.use(
   })
 );
 app.use(bodyParser.json());
-
+app.use(express.static("public"));
 app.use("/api/auth/", authRouter);
 app.use("/api/orders/", ordersRouter);
 app.use("/api/goods/", goodsRouter);
